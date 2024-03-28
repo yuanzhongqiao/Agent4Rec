@@ -1,118 +1,115 @@
-<div align=center>
-<!-- <h1>Avatar: Agent-based Virtual Approach to Large Scale Recommendation Simulation</h1> -->
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
 
-<h1>On Generative Agents in Recommendation</h1>
-
-<img src="https://img.shields.io/badge/License-MIT-blue" alt="license">
-
-![world](assets/sandbox.png)
-
-Agent4Rec, a recommender system simulator with 1,000 LLM-empowered generative agents. These agents are initialized from the [MovieLens-1M](https://grouplens.org/datasets/movielens/1m/) dataset, embodying varied social traits and preferences. Each agent interacts with personalized movie recommendations in a page-by-page manner and undertakes various actions such as watching, rating, evaluating, exiting, and interviewing. With Agent4Rec, we would like to explore the potential of LLM-empowered generative agents in simulating the behavior of genuine, independent humans in recommendation environments. 
-
-
+<div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于推荐中的生成代理</font></font></h1><a id="user-content-on-generative-agents-in-recommendation" class="anchor" aria-label="永久链接：关于推荐中的生成代理" href="#on-generative-agents-in-recommendation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9044897a5d7bef7816e012e7146e3aaf2241f627434b489773a2361a2a4716b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c7565"><img src="https://camo.githubusercontent.com/9044897a5d7bef7816e012e7146e3aaf2241f627434b489773a2361a2a4716b7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6963656e73652d4d49542d626c7565" alt="执照" data-canonical-src="https://img.shields.io/badge/License-MIT-blue" style="max-width: 100%;"></a>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/LehengTHU/Agent4Rec/blob/master/assets/sandbox.png"><img src="/LehengTHU/Agent4Rec/raw/master/assets/sandbox.png" alt="世界" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agent4Rec，一个推荐系统模拟器，拥有 1,000 个 LLM 授权的生成代理。</font><font style="vertical-align: inherit;">这些代理是从</font></font><a href="https://grouplens.org/datasets/movielens/1m/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MovieLens-1M</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据集初始化的，体现了不同的社会特征和偏好。</font><font style="vertical-align: inherit;">每个智能体以逐页的方式与个性化电影推荐进行交互，并进行观看、评分、评价、退出、采访等各种动作。</font><font style="vertical-align: inherit;">通过 Agent4Rec，我们希望探索 LLM 授权的生成代理在模拟推荐环境中真实、独立的人类行为方面的潜力。</font></font></p>
 </div>
-
-
-<p id="Catalogue"></p>  
-
-## 📋 Catalogue 
-<div>
-<img src="assets/agent4rec.png" height=40">
+<p id="user-content-catalogue" dir="auto"></p>  
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📋 目录</font></font></h2><a id="user-content--catalogue" class="anchor" aria-label="永久链接：📋目录" href="#-catalogue"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div dir="auto">
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/LehengTHU/Agent4Rec/blob/master/assets/agent4rec.png"><img src="https://github.com/LehengTHU/Agent4Rec/raw/master/assets/agent4rec.png" height="40&quot;" style="max-width: 100%;"></a>
 </div>
+<ul dir="auto">
+<li><a href="#Catalogue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a></li>
+<li><a href="#Preparations"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">准备工作</font></font></a></li>
+<li><a href="#Simulation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模拟</font></font></a>
+<ul dir="auto">
+<li><a href="#Quick-Start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></a></li>
+<li><a href="#Explore-Various-Recommender-Settings"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索各种推荐设置</font></font></a></li>
+<li><a href="#Results"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看结果</font></font></a></li>
+</ul>
+</li>
+</ul>
 
-- [Catalogue](#Catalogue)
-- [Preparations](#Preparations)
-- [Simulation](#Simulation)
-  - [Quick Start](#Quick-Start)
-  - [Explore Various Recommender Settings](#Explore-Various-Recommender-Settings)
-  - [See the result](#Results)
-<!-- - [Explore Unsolved Problems in Recommender Systems](#Explore-Unsolved-Problems-in-Recommender-Systems)
-  - [Filter Bubble](#Filter-Bubble)
-  - [Causal Discovery](#Causal-Discovery) -->
-- [Simulation Cost](#Simulation-Cost)
+<ul dir="auto">
+<li><a href="#Simulation-Cost"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模拟成本</font></font></a></li>
+</ul>
+<p id="user-content-preparations" dir="auto"></p>  
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚙️准备工作</font></font></h2><a id="user-content-️-preparations" class="anchor" aria-label="永久链接：⚙️准备工作" href="#️-preparations"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤1.安装requirements.txt</font></font></h3><a id="user-content-step-1-install-requirementstxt" class="anchor" aria-label="永久链接：第 1 步。安装requirements.txt" href="#step-1-install-requirementstxt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置 virtualenv 并手动安装</font></font><a href="https://pytorch.org/get-started/previous-versions/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pytorch</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">之后，</font></font><code>requirements.txt</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过运行以下命令安装文件中列出的所有依赖项：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>pip install -r requirements.txt</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="pip install -r requirements.txt" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的实验已在</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python 3.9.12 和 PyTorch 1.13.1+cu117</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上进行了测试。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">步骤2.设置必要的环境</font></font></h3><a id="user-content-step-2-set-up-necessary-environments" class="anchor" aria-label="永久链接：步骤 2. 设置必要的环境" href="#step-2-set-up-necessary-environments"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保您位于</font></font><code>recommenders/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><code>setup.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以找到的目录）中，然后运行以下代码。</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python setup.py build_ext --inplace</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python setup.py build_ext --inplace" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该命令将安装必要的工具来加速推荐器评估。</font></font></p>
 
+<p id="user-content-simulation" dir="auto"></p>  
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⌛️模拟</font></font></h2><a id="user-content-️-simulation" class="anchor" aria-label="永久链接：⌛️模拟" href="#️-simulation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保您位于</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主目录</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（</font></font><code>main.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以找到的位置）。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">首先导出您的 OpenAI API 密钥：</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre><span class="pl-k">export</span> OPENAI_API_KEY=<span class="pl-k">&lt;</span>Your OpenAI API key<span class="pl-k">&gt;</span></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="export OPENAI_API_KEY=<Your OpenAI API key>" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 &lt;Your OpenAI API key&gt; 替换为</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您自己的 OpenAI API key</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p id="user-content-quick-start" dir="auto"></p> 
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">快速开始</font></font></h3><a id="user-content-quick-start" class="anchor" aria-label="永久链接：快速入门" href="#quick-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过运行以下命令，您将启动</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 个代理的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">玩具模拟。</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python main.py</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python main.py" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代理对推荐项目的响应将打印在终端中。</font><font style="vertical-align: inherit;">此模拟大约需要</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 分钟</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">才能完成。</font></font></p>
+<p id="user-content-explore-various-recommender-settings" dir="auto"></p> 
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">探索各种推荐设置</font></font></h3><a id="user-content-explore-various-recommender-settings" class="anchor" aria-label="永久链接：探索各种推荐设置" href="#explore-various-recommender-settings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Agent4Rec支持各种推荐系统和不同的模拟配置。</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>python main.py --simulation_name MyExp --modeltype MF --n_avatars 10 --max_pages 5 --items_per_page 4 --execution_mode parallel</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="python main.py --simulation_name MyExp --modeltype MF --n_avatars 10 --max_pages 5 --items_per_page 4 --execution_mode parallel" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过运行此代码，您将启动一个名为</font></font><code>MyExp</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 个代理的模拟，每个代理将最多浏览 5 个页面，单个页面上有 4 个项目。</font><font style="vertical-align: inherit;">本示例中使用的推荐器是矩阵分解（MF 的缩写）。</font><font style="vertical-align: inherit;">并且实验将以并行模型执行，以加快仿真速度。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><code>--modeltype &lt;model_name&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过在命令中</font><font style="vertical-align: inherit;">修改来选择使用的推荐器。</font><font style="vertical-align: inherit;">您可以替换</font></font><code>&lt;model_name&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为以下受支持的推荐器：</font></font></p>
+<ul dir="auto">
+<li><code>Random</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：向用户随机推荐物品。</font></font></li>
+<li><code>Pop</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：随机向用户推荐热门商品。</font></font></li>
+<li><code>MF</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font><font style="vertical-align: inherit;">具有 BPR 损失的预训练</font></font><a href="https://ieeexplore.ieee.org/abstract/document/5197422" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">矩阵分解模型。</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><code>MultVAE</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：具有 BPR 损失的预训练</font></font><a href="https://arxiv.org/abs/1802.05814" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MultVAE</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型。</font></font></li>
+<li><code>LightGCN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：具有 BPR 损失的预训练</font></font><a href="https://arxiv.org/abs/2002.02126" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LightGCN</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模型。</font></font></li>
+</ul>
 
-<p id="Preparations"></p>  
-
-## ⚙️ Preparations
-
-### Step 1. Install requirements.txt
-Set up a virtualenv and install the [pytorch](https://pytorch.org/get-started/previous-versions/) manually. After that, install all the dependencies listed in the `requirements.txt` file by running the following command:
-
-```bash
-pip install -r requirements.txt
-```
-Our experiments have been tested on **Python 3.9.12 with PyTorch 1.13.1+cu117**.
-
-### Step 2. Set up necessary environments
-Make sure you are in the directory of `recommenders/` (where `setup.py` can be found), and run the following code.
-
-```bash
-python setup.py build_ext --inplace
-```
-
-The command will install necessary tools for accelerating recommender evaluation.
-<!-- 
-Then, run the following command to train a 2 layer LightGCN with bpr loss:
-
-```bash
-python train_recommender.py --neg_sample 1 --infonce 0
-``` -->
-
-<p id="Simulation"></p>  
-
-## ⌛️ Simulation
-Make sure you are in the **main directory** (where `main.py` can be found).
-
-Export your OpenAI API key first:
-
-```bash
-export OPENAI_API_KEY=<Your OpenAI API key>
-```
-Replace \<Your OpenAI API key\> with **your own OpenAI API key**.
-
-<p id="Quick-Start"></p> 
-
-### Quick Start
-
-By running the following command, you will start a toy simulation with **3 agents**.
-```bash
-python main.py
-```
-The response of agents to recommended items will be printed in the terminal. This simulation will take around **3 minutes** to finish.
-
-<p id="Explore-Various-Recommender-Settings"></p> 
-
-### Explore Various Recommender Settings
-
-Agent4Rec supports various recommendation systems and different simulation configurations.
-
-```bash
-python main.py --simulation_name MyExp --modeltype MF --n_avatars 10 --max_pages 5 --items_per_page 4 --execution_mode parallel
-```
-
-By running this code, you will start a simulation named `MyExp` with 10 agents, each agent will browse max to 5 pages with 4 items on a single page. The recommender used in this example is Matrix Factorization (short for MF). And the experiment will be executed in parallel model to speed up the simulation.
-
-You can choose the employed recommender by modifying `--modeltype <model_name>` in the command. You can replace `<model_name>` with the following supported recommenders:
-- `Random`: Randomly recommend items to users.  
-- `Pop`: Randomly recommend popular items to users.  
-- `MF`: Pretrained [Matrix Factorization](https://ieeexplore.ieee.org/abstract/document/5197422) model with BPR loss.  
-- `MultVAE`: Pretrained [MultVAE](https://arxiv.org/abs/1802.05814) model with BPR loss.
-- `LightGCN`: Pretrained [LightGCN](https://arxiv.org/abs/2002.02126) model with BPR loss.  
-
-<!-- <p id="Explore-Various-Recommenders"></p> 
-
-### Explore Various Recommenders -->
-
-<p id="Results"></p>  
-
-### See the Results
-
-The results of the simulation will be saved in `storage/ml-1m/<model_name>/<experiment_name>` directory. As for the command in Section [Explore Various Recommender Settings](#Explore-Various-Recommender-Settings), the results will be saved in `storage/ml-1m/MyExp` directory. All the interaction history of agent 0 is documented in `storage/ml-1m/MF/MyExp/running_logs/0.txt`
-
-<p id="Simulation-Cost"></p>  
-
-## 💰 Simulation Cost
-🛎️ Note that all the experiments are powered by ChatGPT-3.5, and a complete simulation involving 1000 users would cost approximately $16. ($0.016/User)
-
-
+<p id="user-content-results" dir="auto"></p>  
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看结果</font></font></h3><a id="user-content-see-the-results" class="anchor" aria-label="永久链接：查看结果" href="#see-the-results"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模拟结果将保存在</font></font><code>storage/ml-1m/&lt;model_name&gt;/&lt;experiment_name&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中。</font><font style="vertical-align: inherit;">至于</font></font><a href="#Explore-Various-Recommender-Settings"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">“探索各种推荐器设置”</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分中的命令，结果将保存在</font></font><code>storage/ml-1m/MyExp</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中。</font><font style="vertical-align: inherit;">代理 0 的所有交互历史都记录在</font></font><code>storage/ml-1m/MF/MyExp/running_logs/0.txt</code></p>
+<p id="user-content-simulation-cost" dir="auto"></p>  
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💰 模拟成本</font></font></h2><a id="user-content--simulation-cost" class="anchor" aria-label="永久链接：💰 模拟成本" href="#-simulation-cost"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🛎️ 请注意，所有实验均由 ChatGPT-3.5 提供支持，涉及 1000 个用户的完整模拟将花费大约 16 美元。</font><font style="vertical-align: inherit;">（0.016 美元/用户）</font></font></p>
+</article></div>
